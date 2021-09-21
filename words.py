@@ -5,9 +5,8 @@ def load_words():
     # word_list=["navgurukul","learning","kindness","programming","bangalore","campus","computer","python","javascript","bootstrap"]
     # return word_list
 
-    WORDLIST_FILENAME = "words.txt"
     print("Loading word list from file...")
-    inFile = open(WORDLIST_FILENAME, 'r')
+    inFile = open('words.txt', 'r')
     line = inFile.readline()
     word_list = line.split(" ")
     print("  ", len(word_list), "words loaded.\n")
